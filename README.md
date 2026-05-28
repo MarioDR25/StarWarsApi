@@ -12,32 +12,13 @@ API REST para gestionar personajes, planetas y favoritos del universo Star Wars.
 | SQLite                      | 9.0.16   |
 | Swagger / Swashbuckle       | 9.0.6    |
 
-## Endpoints
+## Ejecutar el proyecto
 
-| Metodo  | Ruta                                    | Descripcion                            |
-|---------|-----------------------------------------|----------------------------------------|
-| `GET`   | `/api/users`                            | Listar todos los usuarios              |
-| `GET`   | `/api/users/{id}`                       | Obtener usuario por ID                 |
-| `POST`  | `/api/users`                            | Crear usuario                          |
-| `PUT`   | `/api/users/{id}`                       | Actualizar usuario                     |
-| `DELETE`| `/api/users/{id}`                       | Eliminar usuario                       |
-| `GET`   | `/api/users/favorites`                  | Obtener favoritos del usuario actual   |
-| `GET`   | `/api/characters`                       | Listar todos los personajes            |
-| `GET`   | `/api/characters/{id}`                  | Obtener personaje por ID               |
-| `POST`  | `/api/characters`                       | Crear personaje                        |
-| `PUT`   | `/api/characters/{id}`                  | Actualizar personaje                   |
-| `DELETE`| `/api/characters/{id}`                  | Eliminar personaje                     |
-| `POST`  | `/api/characters/favorite/{id}`         | Agregar personaje a favoritos          |
-| `DELETE`| `/api/characters/favorite/{id}`         | Quitar personaje de favoritos          |
-| `GET`   | `/api/planets`                          | Listar todos los planetas              |
-| `GET`   | `/api/planets/{id}`                     | Obtener planeta por ID                 |
-| `POST`  | `/api/planets`                          | Crear planeta                          |
-| `PUT`   | `/api/planets/{id}`                     | Actualizar planeta                     |
-| `DELETE`| `/api/planets/{id}`                     | Eliminar planeta                       |
-| `POST`  | `/api/planets/favorite/{id}`            | Agregar planeta a favoritos            |
-| `DELETE`| `/api/planets/favorite/{id}`            | Quitar planeta de favoritos            |
+```bash
+dotnet run
+```
 
-> **Nota:** Los endpoints de favoritos requieren el header `X-User-Id` con el ID del usuario.
+La API se levanta con Swagger habilitado en `http://localhost:****/swagger`.
 
 ## Documentacion Swagger
 
@@ -62,18 +43,6 @@ API REST para gestionar personajes, planetas y favoritos del universo Star Wars.
 ![Favoritos del usuario](assets/user-favorites.png)
 
 ![Agregar personaje a favoritos](assets/add-favorite-character.png)
-
-## Ejecutar el proyecto
-
-```bash
-# Restaurar dependencias
-dotnet restore
-
-# Ejecutar
-dotnet run
-```
-
-La API se levanta con Swagger habilitado en `http://localhost:****/swagger`.
 
 ## Estructura del proyecto
 
@@ -101,6 +70,33 @@ StarWarsApi/
 └── assets/
     └── *.png
 ```
+
+## Endpoints
+
+| Metodo  | Ruta                                    | Descripcion                            |
+|---------|-----------------------------------------|----------------------------------------|
+| `GET`   | `/api/users`                            | Listar todos los usuarios              |
+| `GET`   | `/api/users/{id}`                       | Obtener usuario por ID                 |
+| `POST`  | `/api/users`                            | Crear usuario                          |
+| `PUT`   | `/api/users/{id}`                       | Actualizar usuario                     |
+| `DELETE`| `/api/users/{id}`                       | Eliminar usuario                       |
+| `GET`   | `/api/users/favorites`                  | Obtener favoritos del usuario actual   |
+| `GET`   | `/api/characters`                       | Listar todos los personajes            |
+| `GET`   | `/api/characters/{id}`                  | Obtener personaje por ID               |
+| `POST`  | `/api/characters`                       | Crear personaje                        |
+| `PUT`   | `/api/characters/{id}`                  | Actualizar personaje                   |
+| `DELETE`| `/api/characters/{id}`                  | Eliminar personaje                     |
+| `POST`  | `/api/characters/favorite/{id}`         | Agregar personaje a favoritos          |
+| `DELETE`| `/api/characters/favorite/{id}`         | Quitar personaje de favoritos          |
+| `GET`   | `/api/planets`                          | Listar todos los planetas              |
+| `GET`   | `/api/planets/{id}`                     | Obtener planeta por ID                 |
+| `POST`  | `/api/planets`                          | Crear planeta                          |
+| `PUT`   | `/api/planets/{id}`                     | Actualizar planeta                     |
+| `DELETE`| `/api/planets/{id}`                     | Eliminar planeta                       |
+| `POST`  | `/api/planets/favorite/{id}`            | Agregar planeta a favoritos            |
+| `DELETE`| `/api/planets/favorite/{id}`            | Quitar planeta de favoritos            |
+
+> **Nota:** Los endpoints de favoritos requieren el header `X-User-Id` con el ID del usuario.
 
 ## Seguridad
 
