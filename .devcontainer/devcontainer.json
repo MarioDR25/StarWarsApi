@@ -1,6 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
-  "forwardPorts": [5150],
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "version": "9.0"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -8,5 +12,15 @@
       ]
     }
   },
-  "postCreateCommand": "dotnet restore"
+  "forwardPorts": [5150],
+  "portsAttributes": {
+    "5150": {
+      "label": "Star Wars API",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "dotnet tool install --global dotnet-ef --version 9.0.0 && dotnet restore",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.dotnet/tools"
+  }
 }
