@@ -28,23 +28,25 @@ La API se levanta con Swagger habilitado en `http://localhost:****/swagger`.
 
 ## Capturas
 
-### Usuarios
+### Todos los usuarios
 
 ![Todos los usuarios](assets/all-users.png)
 
-### Personajes
+### Todos los personajes
 
 ![Todos los personajes](assets/all-characters.png)
 
-### Planetas
+### Todos los planetas
 
 ![Todos los planetas](assets/all-planets.png)
 
-### Favoritos
+### Favoritos que pertenecen al usuario actual
 
-![Favoritos del usuario](assets/user-favorites.png)
+![Favoritos del usuario actual](assets/user-favorites.png)
 
-![Agregar personaje a favoritos](assets/add-favorite-character.png)
+### Nuevo personaje favorito del usuario actual
+
+![Nuevo personaje favorito](assets/add-favorite-character.png)
 
 ## Estructura del proyecto
 
