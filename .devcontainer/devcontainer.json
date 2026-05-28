@@ -1,5 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
+  "forwardPorts": [5150],
   "customizations": {
     "vscode": {
       "extensions": [
