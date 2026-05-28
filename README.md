@@ -4,6 +4,10 @@ API REST para gestionar personajes, planetas y favoritos del universo Star Wars.
 
 ## Tecnologias
 
+<table>
+<tr>
+<td>
+
 | Tecnologia                  | Version  |
 |-----------------------------|----------|
 | .NET                        | 9.0      |
@@ -12,7 +16,14 @@ API REST para gestionar personajes, planetas y favoritos del universo Star Wars.
 | SQLite                      | 9.0.16   |
 | Swagger / Swashbuckle       | 9.0.6    |
 
+</td>
+<td>
+
 > **Codespaces:** La primera vez que abras el proyecto, espera a que termine de cargar el contenedor y las extensiones. Una vez listo, ejecuta `dotnet run`.
+
+</td>
+</tr>
+</table>
 
 ## Ejecutar el proyecto
 
