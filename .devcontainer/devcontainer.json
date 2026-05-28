@@ -1,4 +1,22 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0",
-  "forwardPorts": [5150]
+  "name": "Star Wars API",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscode-dotnet-runtime"
+      ]
+    }
+  },
+  "forwardPorts": [5150],
+  "postCreateCommand": "dotnet restore",
+  "portsAttributes": {
+    "5150": {
+      "label": "Star Wars API",
+      "onAutoForward": "notify",
+      "visibility": "public"
+    }
+  }
 }
