@@ -1,6 +1,6 @@
 {
   "name": "Star Wars API",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
   "customizations": {
     "vscode": {
       "extensions": [
